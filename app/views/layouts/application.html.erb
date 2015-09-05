@@ -8,35 +8,13 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to 'My Recipes', '', class: 'navbar-brand' %>
-    </div>
+<%= render 'layouts/navigation' %>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><%= link_to 'Home', '' %></li>
-        <li><%= link_to 'About', ''%></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 <div class="container">
 <%= yield %>
 </div>
-<footer class="footer">
-    <div class="container">
-        <p class="text-center">Copyright &copy; 2015 Nott Yusuf</p>
-    </div>
-</footer>
+
+<%= render 'layouts/footer' %>
+
 </body>
 </html>
